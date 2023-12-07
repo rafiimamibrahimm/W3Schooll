@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif ;
+    background-color: white;
+}
+
+/* Header dan Navbar */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    background-color: white;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+
+header  .logo img{
+    width: 60px;
+    cursor: pointer;
+}
+
+header nav ul{
+    /* FLEXBOX */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav ul li button{
+    background-color: transparent;
+    /* border: none; */
+    border: 1px solid grey;
+    width: 150px;
+    height: 30px;
+    /* color: white; */
+    border-radius: 360px;
+    text-align: left;
+    cursor: text;
+}
+
+header .login button.signup{
+    color: white;
+    border-radius: 360px;
+    border: none;
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+header .login button.login{
+    color: white;
+    border-radius: 360px;
+    border: none;
+    background-color: rgb(190, 244, 209);
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    color: black;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+header .login button.login:hover{
+    background-color: green;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+header nav ul li:hover{
+    display: flex;
+    background-color: green;
+    height: 80px;
+    align-items: center;
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+
+
+header nav ul li a{
+    margin: 10px; 
+}
+
+/* Konten */
+
+main{
+    background-image: url(images/background_in_space\ \(1\).gif);
+    background-size: cover;
+    height: 500px;
+    color: white;
+}
+
+main .mainKonten{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .mainKonten h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 0;
+    display: flex;
+}
+
+main .mainKonten h4{
+    font-size: 23px;
+    color: #FFF4A3;
+    font-weight: 700;
+
+}
+
+main .mainKonten a{
+    font-size: 23px;
+    font-weight: 700;
+    color: inherit;
+    margin-top: 40px;   
+}
+
+main .mainKonten a:hover{
+    color: #FFF4A3; 
+}
+
+main .mainKonten input{
+    height: 40px;
+    width: 550px;
+    border-radius: 360px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.main .subKonten{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.main .subKonten .card{
+    background-color: salmon;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.main .subKonten .card h1{
+    font-size: 38px;
+    margin-bottom: 0;
+}
+
+.main .subKonten .card p{
+    margin-bottom: 40px;
+}
+
+.main .subKonten .card button{
+    height: 43px;
+    width: 180px;
+    border: none;
+    border-radius: 360px;
+    color: white;
+    background-color: rgb(37, 37, 43);
+    cursor: pointer;
+}
+
+.main .subKonten .card button:hover{
+    background-color: rgb(10, 10, 11);
+}
+
+/* Footer */
+footer{
+    background-color: rgb(37, 37, 43);
+    bottom: 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .mainFooter{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF4A3;
+}
+
+footer .mainFooter h4 a{
+    color: inherit;
+}
+
+footer .mainFooter img{
+    width: 60px;
+}
+
+footer .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 70px;
+    font-size: 10px;
+    color: white;
+
+}
+
+footer .wrap{
+    /* background-color: white; */
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+footer .text{
+    color: white;
+    font-size: 10px;
+}
